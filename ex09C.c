@@ -11,30 +11,30 @@ void cabecalho(){
 int main(){
 	setlocale(LC_ALL,"");
 	
-	//
+	//Declarando variÃ¡veis
 	int primeiroNum,segundoNum,soma,subtracao,multi,divisao;
 	
-	//
-	printf("Digite o primeiro número: ");
+	//Pedindo valores
+	printf("Digite o primeiro nÃºmero: ");
 	scanf("%i",&primeiroNum);
-	printf("Digite o segundo número: ");
+	printf("Digite o segundo nÃºmero: ");
 	scanf("%i",&segundoNum);
 	cabecalho();
 	
-	//
+	//Calculando
 	soma = primeiroNum + segundoNum;
 	subtracao = primeiroNum - segundoNum;
 	multi = primeiroNum * segundoNum;
 	divisao = primeiroNum / segundoNum;
 	
-	//
+	//Exibindo dados
 	cabecalho();
-	printf("Primeiro número: %i \n",primeiroNum);
-	printf("Segundo número: %i \n",segundoNum);
+	printf("Primeiro nÃºmero: %i \n",primeiroNum);
+	printf("Segundo nÃºmero: %i \n",segundoNum);
 	printf("Soma: %i \n",soma);
-	printf("Subtração: %i \n",subtracao);
-	printf("Multiplicação: %i \n",multi);
-	printf("Divisão: %i \n",divisao);
+	printf("SubtraÃ§Ã£o: %i \n",subtracao);
+	printf("MultiplicaÃ§Ã£o: %i \n",multi);
+	printf("DivisÃ£o: %i \n",divisao);
 	
 	
 	return 0;
