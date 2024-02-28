@@ -11,7 +11,7 @@ int main()
     scanf("%i",&numero);
     
     //Testando valores e exibindo resultados
-    if(numero>0){
+    if(numero!=0){
         antecessor = numero - 1;
         sucessor = numero + 1;
         printf("Antecessor: %i \n",antecessor);
