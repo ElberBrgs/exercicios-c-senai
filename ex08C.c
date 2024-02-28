@@ -36,14 +36,12 @@ int main(){
 	if(primeiroNumero>segundoNumero){
 		maiorValor = primeiroNumero;
 		menorValor = segundoNumero;
-		printf("Maior valor: %i \n",maiorValor);
-		printf("Menor valor: %i \n",menorValor);
 	}else{
 		maiorValor = segundoNumero;
-		menorValor = primeiroNumero;
-		printf("Maior valor: %i \n",maiorValor);
-		printf("Menor valor: %i \n",menorValor);	
+		menorValor = primeiroNumero;	
 	}
+	printf("Maior valor: %i \n",maiorValor);
+	printf("Menor valor: %i \n",menorValor);
 	
 	return 0;
 }
