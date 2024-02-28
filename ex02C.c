@@ -24,6 +24,7 @@ int main()
     printf("Quarta Nota: ");
     scanf("%f",&quartaNota);
     
+    //Testar system("cls") da <stdlib.h>
     
     //Calculando média
     media = (primeiraNota+segundaNota+terceiraNota+quartaNota)/4; 
