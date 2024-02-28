@@ -7,23 +7,16 @@ int main()
     int numero,antecessor,sucessor;
     
     //Pedindo valores
-    printf("Digite um número: ");
+    printf("Digite um número inteiro: ");
     scanf("%i",&numero);
     
-    //Testando valores e exibindo resultados
-    if(numero!=0){
-        antecessor = numero - 1;
-        sucessor = numero + 1;
-        printf("Antecessor: %i \n",antecessor);
-        printf("Sucessor: %i \n",sucessor);
-        
-    }else{
-        printf("Número sem antecessor. \n");
-        sucessor = numero + 1;
-        printf("Sucessor: %i \n",sucessor);
-    };
+    //Testando valores
+    sucessor = numero + 1;
+    antecessor = numero -1;
     
-    
+    //Exibindo resultados
+    printf("Sucessor: %i \n",sucessor);
+	printf("Antecessor: %i \n",antecessor);
 
     return 0;
 }
