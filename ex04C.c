@@ -16,7 +16,7 @@ int main()
     
     //Exibindo resultados
     printf("Sucessor: %i \n",sucessor);
-	printf("Antecessor: %i \n",antecessor);
+    printf("Antecessor: %i \n",antecessor);
 
     return 0;
 }
