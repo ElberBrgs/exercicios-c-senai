@@ -2,7 +2,7 @@
 
 int main(){
 	
-	//Declarando vari·veis
+	//Declarando vari√°veis
 	float valor,resultado,desconto;
 	
 	//Pedindo valores
