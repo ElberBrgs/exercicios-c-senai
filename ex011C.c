@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <string.h> //Biblioteca para comparar strings
 
 void cabecalho(){
 	system("cls || clear");
@@ -11,22 +12,22 @@ void cabecalho(){
 int main(){
 	setlocale(LC_ALL,"");
 	
-	//
-	char login[200];
-	char senha[200];
+	//Declarando variáveis
+	char login[200],senha[200];
+	char loginCadastrado[200] = "Elber",senhaCadastrada[200] = "123";
 	
-	//
+	//Pedindo dados
 	printf("Login: ");
 	scanf("%s",login);
 	printf("Senha: ");
 	scanf("%s",senha);
 	cabecalho();
 	
-	//
-	if(login =="elbo" && senha =="123"){
+	//Testando e exibindo dados
+	if(strcmp(login, loginCadastrado)==0 && strcmp(senha,senhaCadastrada)== 0){
 		printf("Bem-vindo!");
 	}else{
-		printf("Login ou senha inv�lidos.");
+		printf("Login ou senha inválidos.");
 	}
 	
 	return 0;
