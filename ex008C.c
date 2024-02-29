@@ -26,12 +26,7 @@ int main(){
 	media = (primeiroNumero + segundoNumero)/2;
 	soma = primeiroNumero + segundoNumero;
 	produto = primeiroNumero * segundoNumero;
-
-	//Exibindo dados
-	printf("Média: %i \n",media);
-	printf("Soma: %i \n",soma);
-	printf("Produto: %i \n",produto);
-
+	
 	//Testando maior e menor valor e exibindo dados
 	if(primeiroNumero>segundoNumero){
 		maiorValor = primeiroNumero;
@@ -40,8 +35,19 @@ int main(){
 		maiorValor = segundoNumero;
 		menorValor = primeiroNumero;	
 	}
-	printf("Maior valor: %i \n",maiorValor);
-	printf("Menor valor: %i \n",menorValor);
+	
+	if(primeiroNumero == segundoNumero){
+		printf("Valores iguais! \n");
+	}else{
+		printf("Menor valor: %i \n",menorValor);
+		printf("Maior valor: %i \n",maiorValor);
+	}
+
+	//Exibindo dados
+	printf("Média: %i \n",media);
+	printf("Soma: %i \n",soma);
+	printf("Produto: %i \n",produto);
+	
 	
 	return 0;
 }
