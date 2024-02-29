@@ -3,13 +3,13 @@
 
 void cabecalho(){
 	//Limpa o terminal
-    system("cls || clear"); //por algum motivo sÛ funciona no Dev-C++ 5.11
+    system("cls || clear"); //por algum motivo s√≥ funciona no Dev-C++ 5.11
 	printf("\n===SENAI===\n");
 	}	
 
 int main()
 {
-    //Declarando vari·veis
+    //Declarando vari√°veis
     char nome [200];
     int idade;
     float primeiraNota,segundaNota,terceiraNota,quartaNota;
@@ -34,7 +34,7 @@ int main()
     scanf("%f",&quartaNota);
     cabecalho();
     
-    //Calculando mÈdia
+    //Calculando m√©dia
     media = (primeiraNota+segundaNota+terceiraNota+quartaNota)/4; 
     
     //Exibindo dados
@@ -44,7 +44,7 @@ int main()
     printf("Nota 2: %.2f \n",segundaNota);
     printf("Nota 3: %.2f \n",terceiraNota);
     printf("Nota 4: %.2f \n",quartaNota);
-    printf("Sua mÈdia È: %.2f \n",media);
+    printf("Sua m√©dia √©: %.2f \n",media);
     
 
     return 0;
