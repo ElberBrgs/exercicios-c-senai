@@ -3,14 +3,14 @@
 
 void cabecalho(){
 	//Limpa o terminal
-    system("cls || clear"); //por algum motivo só funciona no Dev-C++ 5.11
+    system("cls || clear"); //por algum motivo sÃ³ funciona no Dev-C++ 5.11
 	printf("\n===SENAI===\n");
 	fflush(stdin);//Limpa cache - setbuf(stdin,0); no Online GDB
 	}	
 
 int main()
 {
-    //Declarando variáveis
+    //Declarando variÃ¡veis
     char nome [200];
     int idade;
     float primeiraNota,segundaNota,terceiraNota;
@@ -33,15 +33,15 @@ int main()
     scanf("%f",&terceiraNota);
     cabecalho();
     
-    //Calculando média
+    //Calculando mÃ©dia
     media = (primeiraNota+segundaNota+terceiraNota)/3; 
     
     //Exibindo dados
     printf("Nome: %s \n",nome);
     printf("Idade: %i \n",idade);
-    printf("Sua média é: %.2f \n",media);
+    printf("Sua mÃ©dia Ã©: %.2f \n",media);
     
-	//Testando média
+	//Testando mÃ©dia
     if(media>=7){
     	printf("Aprovado! \n");
 	}else{
