@@ -10,6 +10,7 @@ void cabecalho(){
 
 int main(){
 	setlocale(LC_ALL,""); 
+	cabecalho();
 	
 	//Declarando variáveis.
 	int nota, soma, i;
