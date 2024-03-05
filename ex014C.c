@@ -12,7 +12,7 @@ int main(){
 	setlocale(LC_ALL,""); 
 	
 	//Declarando variáveis.
-	int nota, soma, contador;
+	int nota, soma, i;
 	
 	//Solicitando dados para o usuário.
 	for(i=1; i<=5; i++){
