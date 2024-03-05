@@ -15,8 +15,8 @@ int main(){
 	int nota, soma, contador;
 	
 	//Solicitando dados para o usuário.
-	for(contador =1; contador <=5; contador++){
-		printf("Digite a %iª nota: ", contador);
+	for(i=1; i<=5; i++){
+		printf("Digite a %iª nota: ", i);
 		scanf("%i",&nota);
 
     //Somando notas
