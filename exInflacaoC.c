@@ -9,7 +9,7 @@ float inflacionarPreco(float preco){
 	if(preco < 100){
 		novoPreco = preco * 1.1;
 		
-	}else if(preco >=100){
+	}else{
 		novoPreco = preco * 1.2;	
 	}
 	
