@@ -12,16 +12,17 @@ int main(){
 	setlocale(LC_ALL,""); 
 	cabecalho();
 	
-	int nota,i,soma,media;
+	float nota,soma,media,i;
 	
-	for(i=1;i<=4;i++){
-		printf("Escreva a %iª nota: ",i);
-		scanf("%i",&nota);
-		soma = soma + nota;
+	for(i=1 ;i<=4 ;i++){
+	printf("Digite sua %.0fª nota: ",i);
+	scanf("%f",&nota);
+	soma += nota;
+	
 	}
 	
-		media = soma/4;
-		printf("Média: %i",media);	
+	media = soma /4;
+	printf("Média: %.1f",media);
 	
 	return 0;
 }
