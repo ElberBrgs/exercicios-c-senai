@@ -22,7 +22,7 @@ int main (){
 	//Limpa o terminal
 	system("cls");
 	
-	//& n„o È necess·rio no printf
+	//& n√£o √© necess√°rio no printf
 	printf("Nome: %s \n",nome);
 	printf("Sexo: %c \n",sexo);
 	printf("Idade: %i \n",idade);
