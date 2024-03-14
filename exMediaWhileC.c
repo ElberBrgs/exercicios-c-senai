@@ -21,10 +21,16 @@ int main(){
 			
 	}
 	
-	system("clear || cls");
-	media = soma/contador;
+	if(contador == 0){
+		printf("Não foi informado um número positivo.");
+		
+	}else{
+		media = soma/contador;
+		printf("Média: %.2f",media);
+
+	}
 	
-	printf("Média: %.2f",media);
+	
 	
 	return 0;
 	
