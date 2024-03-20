@@ -16,8 +16,9 @@ int main(){
 	}
 	system("clear || cls");
 	
+	printf("=== Notas === \n");
+	
 	for (i = 0; i <3; i++){
-		printf("=== Notas === \n");
 		printf("%dª nota: %d\n", i + 1,notas[i]);
 	}
 	
