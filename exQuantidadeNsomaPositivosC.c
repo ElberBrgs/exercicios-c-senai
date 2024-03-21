@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-#define TAM 2 // Constante de tamanho.
+#define TAM 10 // Constante de tamanho.
 
 
 int main(){
