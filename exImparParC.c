@@ -1,17 +1,34 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+#define TAM 6 // Constante de tamanho.
+
 
 int main(){
-	int numero;
+	setlocale(LC_ALL,"");
 	
-	printf("Digite um número: ");
-	scanf("%i",&numero);
+	int numeros [TAM],i,par=0,impar=0;
 	
-	if(numero % 2 == 0){
-		printf("Número par.");
-	}else{
-		printf("Número ímpar.");
-	};
 	
+	for(i=0;i< TAM ;i++){
+		printf("Digite o %dÂº nÃºmero: ",i+1);
+		scanf("%d",&numeros[i]);
+		
+	numeros[i] %2 == 0 ? par++ : impar++;
+	
+	}
+	
+	printf("\n===RESULTADOS===\n");
+	
+	for(i = 0 ; i < TAM ; i++){
+		printf("%dÂº nÃºmero: %d \n",i+1,numeros[i]);
+	}
+	
+	
+	printf("NÃºmeros par: %d\n",par);	
+	printf("NÃºmeros Ã­mpar: %d",impar);
+
+		
 	return 0;
 }
