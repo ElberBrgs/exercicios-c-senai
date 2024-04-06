@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int main (){
+	
 	char nome [200];
 	char sexo;
 	int idade;
@@ -27,7 +28,6 @@ int main (){
 	printf("Sexo: %c \n",sexo);
 	printf("Idade: %i \n",idade);
 	printf("Peso: %.2f \n",peso);
-	
 	
 	return 0;
 }
