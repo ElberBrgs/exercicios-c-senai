@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <ctype.h> //Biblioteca para converter para maiúscula.
-
+#include <ctype.h> //Biblioteca para converter para maiúscula ou minúscula.
 
 int main(){
 	setlocale(LC_ALL,"");
@@ -50,7 +49,6 @@ int main(){
 		printf("Bloco executado %i vez.",contador);	
 		
 		}
-		
-
+	
 	return 0;
 }
