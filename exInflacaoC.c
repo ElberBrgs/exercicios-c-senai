@@ -16,7 +16,6 @@ float inflacionarPreco(float preco){
 	return novoPreco;
 }
 
-
 int main(){
 	setlocale(LC_ALL,"");
 	
