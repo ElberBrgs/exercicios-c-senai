@@ -11,9 +11,8 @@ void cabecalho(){
 int main(){
 	setlocale(LC_ALL,""); 
 	
-	
 	int j;
-	
+
 	for(j=100;j>=1;j--){
 		printf("%d \n",j);
 	}
