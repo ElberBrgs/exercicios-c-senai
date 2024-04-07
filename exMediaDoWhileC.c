@@ -14,14 +14,12 @@ int main(){
 	
 	float primeiraNota,segundaNota,media;
 	
-	
 	do{
 		
 	printf("Digite a sua primeira nota: ",primeiraNota);
 	scanf("%f",&primeiraNota);
 	cabecalho();
 	 
-		
 	}while(primeiraNota  < 0 || primeiraNota > 10);
 	
 	do{
@@ -30,11 +28,9 @@ int main(){
 	scanf("%f",&segundaNota);
 	cabecalho();
 	
-		
 	}while(segundaNota < 0 || segundaNota > 10);
 	
 	media = (primeiraNota + segundaNota)/2;
-	
 	
 	printf("Média: %.1f \n",media);
 	printf("FIM.");
