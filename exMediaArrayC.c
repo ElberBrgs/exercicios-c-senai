@@ -28,6 +28,5 @@ int main(){
 	
 	printf("Média: %.1f",media);
 	
-	return 0;
-	
+	return 0;	
 }
