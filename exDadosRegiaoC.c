@@ -3,75 +3,67 @@
 #include <locale.h>
 #include <ctype.h>
 
-int main(){
-	setlocale(LC_ALL,"");
+int main() {
+    setlocale(LC_ALL, "");
 	
-	char sexo;
-	int idade,maiorIdade=0,menorIdade=999,opcao,quantidadeSalarios = 0,mulheres5k = 0;
-	float salario,somaSalarios = 0,mediaSalarial;
+    char sexo;
+    int idade, maiorIdade = 0, menorIdade = 999, opcao, quantidadeSalarios = 0, mulheres5k = 0;
+    float salario, somaSalarios = 0, mediaSalarial;
 	
-	do{
+    do {
+        printf("\nCódigo | Descrição\n");
+        printf("1 | Adicionar pessoa.\n");
+        printf("2 | Exibir resultados e sair.\n");
+        printf("--Digite o código correspondente-- \n");
+        scanf("%i", &opcao);
 	
+        system("clear || cls");
 	
-	printf("\nCódigo | Descrição\n");
-	printf("1 | Adicionar pessoa.\n");
-	printf("2 | Exibir resultados e sair.\n");
-	printf("--Digite o código correspondente-- \n");
-	scanf("%i",&opcao);
+        switch (opcao) {
+            case 1:
+                printf("\nDigite sua idade: ");
+                scanf("%i", &idade);
 	
-	system("clear || cls");
+                printf("\nDigite seu salário: ");
+                scanf("%f", &salario);
 	
-	switch (opcao){
-		case 1:
+                printf("\nDigite seu sexo (f/m) : ");
+                scanf(" %c", &sexo);
+                sexo = toupper(sexo);
 			
-	
-			printf("\nDigite sua idade: ");
-			scanf("%i",&idade);
-	
-	
-			printf("\nDigite seu salário: ");
-			scanf("%f",&salario);
-	
-			printf("\nDigite seu sexo (f/m) : ");
-			scanf("%s",&sexo);
+                if (idade > maiorIdade) {
+                    maiorIdade = idade;
+                }
 			
-			sexo = toupper(sexo);
+                if (idade < menorIdade) {
+                    menorIdade = idade;
+                }
 			
-			if(idade > maiorIdade){
-				maiorIdade = idade;
-			}
+                quantidadeSalarios++;
+                somaSalarios += salario;
 			
-			if(idade < menorIdade){
-				menorIdade = idade;
-			}
+                if (sexo == 'F' && salario >= 5000) {
+                    mulheres5k++;
+                }
 			
-			quantidadeSalarios++;
-			somaSalarios+=salario;
+                break;
 			
-			if(sexo =='F' && salario >= 5000){
-				mulheres5k++;
-			}
+            case 2:
+                mediaSalarial = somaSalarios / quantidadeSalarios;
 			
-			break;
+                printf("\n===Exibindo resultados ===\n");
+                printf("Média salarial do grupo: R$ %.2f \n", mediaSalarial);
+                printf("Maior idade: %i \n", maiorIdade);
+                printf("Menor idade: %i \n", menorIdade);
+                printf("Quantidade de mulheres com salário acima de 5 mil: %i \n", mulheres5k);
 			
-		case 2:
-			mediaSalarial = somaSalarios/quantidadeSalarios;
-			
-			printf("\n===Exibindo resultados ===\n");
-			printf("Média salarial do grupo: R$ %.2f \n",mediaSalarial);
-			printf("Maior idade: %i \n",maiorIdade);
-			printf("Menor idade: %i \n",menorIdade);
-			printf("Quantidade de mulheres com salário acima de 5 mil: %i \n",mulheres5k);
-			
-			break;
-		default:
-			printf("Opção inválida. \n");		
-	}
+                break;
+		
+            default:
+                printf("Opção inválida. \n");		
+        }
 	
+    } while (opcao != 2);		
 	
-	}while(opcao != 2);		
-	
-	
-	return 0;
-	
+    return 0;
 }
