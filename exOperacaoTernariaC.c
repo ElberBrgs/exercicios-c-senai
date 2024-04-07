@@ -6,7 +6,6 @@ void verificarParOuImpar(int numero){
 	
 	//Operação ternária.
 	numero %2 == 0 ? printf("Número Par.") : printf("Número Ímpar.");
-	
 }
 
 
