@@ -14,7 +14,6 @@ int main(){
 	
 	float nota;
 	
-	
 	do{
 		
 	printf("Digite a sua nota: ");
