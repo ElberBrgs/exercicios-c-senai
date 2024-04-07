@@ -17,20 +17,16 @@ int main(){
 		soma += numero;
 		
 		printf("Digite um número: ");
-		scanf("%i",&numero);			
-			
+		scanf("%i",&numero);				
 	}
 	
 	if(contador <= 0){
 		printf("Não foi informado um número positivo.");
-		
 	}else{
 		//cast
 		media = soma/ (float) contador;
 		printf("Média: %.2f",media);
-
 	}
 	
 	return 0;
-	
 }
