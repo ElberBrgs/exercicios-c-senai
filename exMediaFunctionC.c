@@ -9,7 +9,6 @@ float mediaTotal(float n1,float n2){
 	
 }
 
-
 int main(){
 	setlocale(LC_ALL,""); 
 	
