@@ -14,7 +14,6 @@ char* verificarParOuImpar(int numero){
 	
 }
 
-
 int main(){
 	setlocale(LC_ALL,"");
 	
