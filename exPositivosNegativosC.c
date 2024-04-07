@@ -30,9 +30,10 @@ int main(){
 		if(numeros[i]==0){
 			break;
 		}
-		
 	}
- 
+
+	system("clear || cls");
+	
 	printf("\n===Exibindo resultados===\n");
 	printf("Quantidade de números positivos: %i\n",quantidadePositivos);
 
