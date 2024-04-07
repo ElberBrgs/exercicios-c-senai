@@ -36,6 +36,5 @@ int main(){
 	printf("Multiplicação: %i \n",multi);
 	printf("Divisão: %i \n",divisao);
 	
-	
 	return 0;
 }
