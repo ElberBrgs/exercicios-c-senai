@@ -4,12 +4,10 @@
 
 #define TAM 6 // Constante de tamanho.
 
-
 int main(){
 	setlocale(LC_ALL,"");
 	
 	int numeros [TAM],i,par=0,impar=0;
-	
 	
 	for(i=0;i< TAM ;i++){
 		printf("Digite o %dº número: ",i+1);
@@ -25,10 +23,8 @@ int main(){
 		printf("%dº número: %d \n",i+1,numeros[i]);
 	}
 	
-	
 	printf("Números par: %d\n",par);	
 	printf("Números ímpar: %d",impar);
-
-		
+	
 	return 0;
 }
