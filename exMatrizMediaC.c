@@ -13,7 +13,6 @@ int main(){
 	float soma=0,media[4];
 	int i,j;
 	
-
 	for(i=0;i<ALUNOS;i++){
 		printf("Digite o nome do %dº aluno: ",i+1);
 		scanf("%s",&alunos[i]);
@@ -45,7 +44,6 @@ int main(){
 		printf("\n");
 		
 	}
-		
 	
 	return 0;
 }
