@@ -3,12 +3,11 @@
 #include <locale.h>
 
 void somar(int n1,int n2){
-	int soma;	
-	soma = n1 + n2;
-	printf("\nSoma: %i \n ",soma);
+	int somaFunction;	
+	somaFunction = n1 + n2;
+	printf("\nSoma: %i \n ",somaFunction);
 	
 }
-
 
 int main(){
 	setlocale(LC_ALL,""); 
