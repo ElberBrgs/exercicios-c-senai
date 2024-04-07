@@ -11,8 +11,6 @@ int main(){
 	for (i = 0; i<3; i++){
 		printf("%dª nota: ",i + 1);
 		scanf("%d",&notas[i]);
-		
-		
 	}
 	system("clear || cls");
 	
@@ -23,5 +21,4 @@ int main(){
 	}
 	
 	return 0;
-	
 }
