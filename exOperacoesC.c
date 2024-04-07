@@ -6,27 +6,22 @@ int somar(int n1,int n2){
 	int soma;
 	soma = n1 + n2;
 	return soma;
-	
 }
 int subtrair(int n1,int n2){
 	int subtracao;
 	subtracao = n1 - n2;
 	return subtracao;
-	
 }
 int dividir(int n1,int n2){
 	int divisao;
 	divisao = n1 / n2;
 	return divisao;
-	
 }
 int multiplicar(int n1,int n2){
 	int multiplicacao;
 	multiplicacao = n1 * n2;
 	return multiplicacao;
-	
 }
-
 
 int main(){
 	setlocale(LC_ALL,"");
@@ -47,7 +42,6 @@ int main(){
 	printf("\nSubtração: %i \n",subtracao);
 	printf("\nDivisão: %i \n",divisao);
 	printf("\nMultiplicação: %i \n",multiplicacao);
-	
 	
 	return 0;
 }
