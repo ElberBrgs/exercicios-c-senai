@@ -6,7 +6,6 @@ float mediaTotal(float n1,float n2){
 	float media;	
 	media = (n1 + n2)/2;
 	return media;
-	
 }
 
 float resultadoMedia(float media){
@@ -17,8 +16,6 @@ float resultadoMedia(float media){
 	}
 	return media;
 }
-
-
 
 int main(){
 	setlocale(LC_ALL,""); 
@@ -35,7 +32,6 @@ int main(){
 	resultado = resultadoMedia(media);
 	
 	printf("\nMédia: %.2f \n",media);
-	
 	
 	return 0;
 }
