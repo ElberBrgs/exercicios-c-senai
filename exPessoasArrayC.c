@@ -4,7 +4,6 @@
 
 #define TAM 5 // Constante de tamanho.
 
-
 int main(){
 	setlocale(LC_ALL,"");
 	
