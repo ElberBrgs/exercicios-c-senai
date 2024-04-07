@@ -4,15 +4,12 @@
 
 void verificarParOuImpar(int numero){
 	
-	
 	if(numero % 2 == 0){
 		printf("Número par.");
 	}else{
 		printf("Número ímpar.");
 	}
-	
 }
-
 
 int main(){
 	setlocale(LC_ALL,"");
